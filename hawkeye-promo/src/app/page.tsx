@@ -9,17 +9,17 @@ import HawkeyeIcon from "./components/HawkeyeIcon";
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-start w-full h-full gap-[120px] ">
-      <section className="flex flex-col items-center justify-center gap-[30px] w-[50%] mt-[120px]">
+      <section id="hero" className="flex flex-col items-center justify-center gap-[30px] w-[50%] mt-[120px]">
         <HawkeyeIcon/>
         <h1 className="text-white-1 font-calsans text-2xl text-center">
           The ultimate tennis assistant in the palm of your hand
         </h1>
-        <p className="text-grey-2 font-medium font-jakarta text-lg text-center">
-          Elevate your game to the next level with the power of AI.
+        <p className="text-grey-2 font-normal font-jakarta text-center text-base w-[60%]">
+          Elevate your game to the next level with the power of AI. Hawkeye provides accurate & useful stats, live hawk-eye, and more.
         </p>
         <Button label="Join waitlist" />
       </section>
-      <section className="flex flex-col items-center justify-center gap-[60px] w-[50%] ">
+      <section id="features" className="flex flex-col items-center justify-center gap-[60px] w-[50%] ">
         <div className="flex flex-col items-center justify-center gap-[15px]">
           <h2 className="text-white-1 font-calsans text-xl text-center">
             Features
@@ -31,7 +31,7 @@ export default function Home() {
         </div>
         <Divider />
       </section>
-      <section className="flex flex-col items-center justify-center gap-[60px] w-[50%] ">
+      <section id="alpha" className="flex flex-col items-center justify-center gap-[60px] w-[50%] ">
         <div className="flex flex-col items-center justify-center gap-[15px]">
           <h2 className="text-white-1 font-calsans text-xl text-center">
             Alpha Version
@@ -44,7 +44,7 @@ export default function Home() {
         <Divider />
         <Video />
       </section>
-      <section className="flex flex-col items-center justify-center gap-[60px] w-[50%] ">
+      <section id="waitlist" className="flex flex-col items-center justify-center gap-[60px] w-[50%] ">
         <div className="flex flex-col items-center justify-center gap-[15px]">
           <h2 className="text-white-1 font-calsans text-xl text-center">
             Join Waitlist
@@ -55,7 +55,7 @@ export default function Home() {
         </div>
         <Divider />
       </section>
-      <section className="flex flex-col items-center justify-center gap-[15px] w-[50%] ">
+      <section id="contact" className="flex flex-col items-center justify-center gap-[15px] w-[50%] ">
         <h2 className="text-white-1 font-calsans text-xl text-center">
           Contact Us
         </h2>
