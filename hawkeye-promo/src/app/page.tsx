@@ -4,11 +4,13 @@ import Button from "./components/Button";
 import Footer from "./components/Footer";
 import Divider from "./components/Divider";
 import Video from "./components/Video";
+import HawkeyeIcon from "./components/HawkeyeIcon";
 
 export default function Home() {
   return (
     <main className="flex flex-col items-center justify-start w-full h-full">
       <section className="flex flex-col items-center justify-center gap-[30px] w-[50%] my-[120px]">
+        <HawkeyeIcon/>
         <h1 className="text-white-1 font-calsans text-2xl text-center">
           The ultimate tennis assistant in the palm of your hand
         </h1>

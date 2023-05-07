@@ -5,7 +5,7 @@ import React from "react";
 const Header: React.FC = () => {
   return (
     <>
-      <span className="blur-[60px] left-[25%] fixed top-[30px] z-10 w-[50%] h-[60px] bg-gradient-to-r from-[#162F33] via-[#293053] to-[#123223]"></span>
+      <span className="blur-[100px] opacity-90 left-[25%] fixed top-[30px] z-10 w-[50%] h-[60px] bg-gradient-to-r from-[#195849] via-[#2f3a6e] to-[#1b573b]"></span>
       <header className="z-20 flex justify-between fixed top-0 w-screen px-[30px] md:px-[60px] lg:px-[120px] xl:px-[240px] py-[15px] border-b border-blue-4 backdrop-blur-[35px] bg-blue-1/50">
         <div className="flex gap-[60px] items-center justify-start">
           <svg
