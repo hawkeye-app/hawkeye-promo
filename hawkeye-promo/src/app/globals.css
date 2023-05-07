@@ -38,15 +38,3 @@ body {
     rgb(var(--background-start-rgb));
   */
 }
-
-@layer utilities {
-  .bg-glass{
-    background-image: radial-gradient(
-      transparent 1px,#090E1C 1px
-    );
-    background-size: 4px 4px;
-    backdrop-filter: blur(3px);
-    -webkit-backdrop-filter: blur(3px);
-    -moz-backdrop-filter: blur(3px);
-  }
-}

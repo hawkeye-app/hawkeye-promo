@@ -1,10 +1,7 @@
-import React from 'react';
-import Feature from './Feature';
+import React from "react";
+import Feature from "./Feature";
 
-const FeatureSet:React.FC = () => {
-    
-    return (<article>
-
-    </article>);
-}
+const FeatureSet: React.FC = () => {
+  return <article></article>;
+};
 export default FeatureSet;

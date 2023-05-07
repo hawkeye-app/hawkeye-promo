@@ -1,4 +1,7 @@
 import React from "react";
+import GithubIcon from "./GithubIcon";
+import InstagramIcon from "./InstagramIcon";
+import LinkedinIcon from "./LinkedinIcon";
 
 //after:block after:fixed after:z-10 after:w-[50%] after:h-[50px] after:bg-brand-1
 
@@ -6,7 +9,7 @@ const Header: React.FC = () => {
   return (
     <>
       <span className="bg-gradient-to-r from-[#195849] via-[#2f3a6e] to-[#1b573b] blur-[100px] opacity-90 left-[25%] fixed top-[30px] z-10 w-[50%] h-[60px]"></span>
-      <header className="z-20 flex justify-between fixed top-0 w-screen px-[30px] md:px-[60px] lg:px-[120px] xl:px-[240px] py-[15px] border-b border-blue-4 backdrop-blur-[35px] bg-blue-1/50">
+      <header className="z-20 flex justify-between fixed top-0 w-full px-[30px] md:px-[60px] lg:px-[120px] xl:px-[240px] py-[15px] border-b border-blue-4 backdrop-blur-[35px] bg-blue-1/50">
         <div className="flex gap-[60px] items-center justify-start">
           <a href="#">
             <svg
@@ -49,34 +52,61 @@ const Header: React.FC = () => {
           <nav className="flex gap-[15px]">
             <a
               href="#features"
-              className="text-grey-2 font-jakarta font-medium text-sm"
+              className="text-grey-2 font-jakarta font-medium text-sm transition-all ease-in-out duration-200 hover:text-white-1"
             >
               Features
             </a>
             <a
               href="#alpha"
-              className="text-grey-2 font-jakarta font-medium text-sm"
+              className="text-grey-2 font-jakarta font-medium text-sm transition-all ease-in-out duration-200 hover:text-white-1"
             >
               Alpha
             </a>
             <a
               href="#waitlist"
-              className="text-grey-2 font-jakarta font-medium text-sm"
+              className="text-grey-2 font-jakarta font-medium text-sm transition-all ease-in-out duration-200 hover:text-white-1"
             >
               Waitlist
             </a>
             <a
               href="#contact"
-              className="text-grey-2 font-jakarta font-medium text-sm"
+              className="text-grey-2 font-jakarta font-medium text-sm transition-all ease-in-out duration-200 hover:text-white-1"
             >
               Contact
             </a>
           </nav>
         </div>
-        <div>
+        <div className="flex gap-[15px] items-center">
           <p className="text-grey-2 font-jakarta font-medium text-sm">
-            Settings & Social Networks
+            Toggle Language
           </p>
+          <span className="bg-blue-4 w-[1px] h-[16px]"></span>
+          <div className="flex gap-[10px] items-center">
+            <p className="font-jakarta text-sm font-bold text-grey-2">
+              Follow us on
+            </p>
+            <a
+              href="https://github.com/Hawkeye-App"
+              rel="noopener"
+              target="_blank"
+            >
+              <GithubIcon />
+            </a>
+            <a
+              href="https://www.instagram.com/hawkeye.app/"
+              rel="noopener"
+              target="_blank"
+            >
+              <LinkedinIcon />
+            </a>
+            <a
+              href="https://www.linkedin.com/company/hawkeye-app/"
+              rel="noopener"
+              target="_blank"
+            >
+              <InstagramIcon />
+            </a>
+          </div>
         </div>
       </header>
     </>
