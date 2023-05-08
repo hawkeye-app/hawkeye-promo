@@ -30,7 +30,7 @@ const Video: React.FC = () => {
         poster="/images/hawkeye-thumbnail.png"
         src="/video/hawkeye-alpha.mp4"
         controls
-        className="relative z-10 border border-blue-4 rounded"
+        className="relative z-10 border border-blue-4 rounded-md"
       ></video>
       <canvas
         ref={canvas}
