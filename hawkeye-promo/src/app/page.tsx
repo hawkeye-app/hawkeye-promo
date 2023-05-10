@@ -5,7 +5,7 @@ import Footer from "./components/Footer";
 import Divider from "./components/Divider";
 import Video from "./components/Video";
 import HawkeyeIcon from "./components/HawkeyeIcon";
-
+import WaitlistForm from "./components/form/WaitlistForm";
 /* 
 
 <Image src='/images/asset-r.png' alt="Background Gradient Asset" height={1000} width={500} quality={100} className="absolute left-[0] top-0 z-0" />
@@ -24,7 +24,7 @@ export default function Home() {
         <p className="text-grey-2 font-normal font-jakarta text-center text-base">
           Elevate your game to the next level with the power of AI. Hawkeye provides <br/>accurate stats, live hawk-eye, and more.
         </p>
-        <Button label="Join waitlist" />
+        <Button purpose="button" label="Join waitlist" />
       </section>
       <section id="features" className="flex flex-col items-center justify-center gap-[60px] w-[50%] pt-[120px]">
         <div className="flex flex-col items-center justify-center gap-[15px]">
@@ -61,6 +61,7 @@ export default function Home() {
           </p>
         </div>
         <Divider />
+        <WaitlistForm/>
       </section>
       <section id="contact" className="flex flex-col items-center justify-center gap-[15px] w-[50%] py-[120px]">
         <h2 className="text-white-1 font-calsans text-xl text-center">

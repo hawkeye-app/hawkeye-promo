@@ -2,7 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
   color-scheme: dark;
   /*
@@ -21,7 +20,7 @@
 }
 */
 
-*{
+* {
   box-sizing: border-box;
   scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
@@ -37,4 +36,11 @@ body {
     )
     rgb(var(--background-start-rgb));
   */
+}
+
+@layer utilities {
+  .glow-brand {
+    border: 1px solid #4ecb71;
+    box-shadow: 0px 0px 8px rgba(78, 203, 113, 0.25);
+  }
 }
