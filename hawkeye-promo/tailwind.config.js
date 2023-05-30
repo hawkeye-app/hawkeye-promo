@@ -7,6 +7,8 @@ module.exports = {
   ],
   theme: {
     colors: {
+      //Transparent
+      "transparent": "transparent",
       //Blues
       "blue-1": "#090E1C",
       "blue-2": "#131826",
@@ -20,13 +22,13 @@ module.exports = {
       "white-1": "#E0E5F3",
       //Brand
       "brand-1": "#4ECB71",
+      "brand-2": "#3EA25A",
     },
     fontSize: {
       "sm": ["14px"],
       "base": ["16px"],
-      "lg": ["20px"],
       "xl": ["48px"],
-      "2xl": ["64px"],
+      "2xl": ["72px", 1],
     },
     fontFamily: {
       calsans: ["var(--font-calsans)"],
