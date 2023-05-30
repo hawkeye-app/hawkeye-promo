@@ -1,29 +1,29 @@
 import { NextRequest } from "next/server";
 import { PrismaClient } from "@prisma/client";
-import { z } from "zod";
 
-export const validator = z.object({
-  email: z.string().email(),
-  type: z.string(),
-});
-
-export type Body = z.infer<typeof validator>;
+export type Body = {
+  email: string;
+  type: string;
+};
 const prisma = new PrismaClient();
 
 export async function POST(req: NextRequest) {
   const body = await req.json();
   console.log(body);
 
-  const { email, type } = validator.parse(body);
+  const data: Body = {
+    email: body.email,
+    type: body.type,
+  };
 
   await prisma.user.create({
     data: {
-      email: email,
-      type: type,
+      email: data.email,
+      type: data.type,
     },
   });
 
-  return new Response("Created Successfully", {
+  return new Response("Created Successfully, Nice", {
     status: 201,
   });
 }

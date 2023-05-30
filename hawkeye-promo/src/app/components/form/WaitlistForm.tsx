@@ -6,7 +6,6 @@ import axios from "axios";
 import { useState } from "react";
 import { Listbox } from "@headlessui/react";
 import { CheckIcon, ChevronUpDownIcon } from "@heroicons/react/20/solid";
-import { z } from "zod";
 import { Body } from "@/app/api/user/route";
 
 const WaitlistForm: React.FC = () => {
