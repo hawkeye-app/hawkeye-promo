@@ -34,7 +34,7 @@ const HawkeyeIcon: React.FC = () => {
               strokeWidth="3.32749"
             />
             <path
-              fill-rule="evenodd"
+              fillRule="evenodd"
               clipRule="evenodd"
               d="M36.0031 49.1237C38.89 48.8556 41.037 46.468 41.3369 43.6929L31.9287 38.3052C30.2747 39.5078 29.2788 41.5267 29.4816 43.7107C29.7877 47.0063 32.7075 49.4298 36.0031 49.1237Z"
               fill="#4ECB71"
