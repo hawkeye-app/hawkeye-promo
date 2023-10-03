@@ -25,7 +25,10 @@ const WaitlistForm: React.FC = () => {
       email: email,
       type: userType,
     };
-    const result = await axios.post("http://localhost:3000/api/user", data);
+    const result = await axios.post(
+      "https://www.hawkeye.com.ar/api/user",
+      data
+    );
     setEmail("");
     console.log(result);
   };
